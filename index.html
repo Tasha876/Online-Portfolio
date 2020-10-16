@@ -1,136 +1,273 @@
-html {
-    scroll-behavior: smooth
-}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <!-------------in case I want to use some more fonts-------------->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">        
+        <link rel="stylesheet" href="style.css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body data-spy="scroll" data-target=".navbar" data-offset="40">
 
-body {
-    background-image: radial-gradient(grey, black);
-    background-size: auto 100vmax;
-    background-repeat: repeat;
-    background-position: center;
-    background-attachment: fixed;
-}
+        <!---------------------------------------navigation------------------------------------------->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark mb-3 full-screen-scroller">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="nav navbar-nav ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about_me">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Projects</a>
+                    </li>
+                    <!--li class="nav-item">
+                        <a class="nav-link" href="#resume">Resum&eacute;</a>
+                    </li-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+          </nav>
 
+        <!---------------------------------------content------------------------------------------->
+        <main>
 
-main {
-    overflow-y: auto;
-    scroll-snap-type: mandatory !important;
-    scroll-snap-points-y: repeat(100vh) !important;
-    scroll-snap-type: y mandatory !important;
-}
+             <!---------------------------------------splash intro------------------------------------------->
+            <div id="home" class="container d-flex align-items-center flex-column min-vh-100">
+                <div class="row w-100 mt-auto">
+                    <div class="col-md-12">   
+                        <div class="jumbotron pb-2 m-0">
+                            <h1 class="display-1 text-white text-center">Hello.</h1>
+                            <h2 class="display-3 text-white text-center">I'm Natasha,</h2>
+                            <h2 class="display-4 text-white text-center">I code and design websites.</h2>
+                        </div>
+                    </div>   
+                </div> 
 
-main .container-fluid {
-    width: 100vw;
-    scroll-snap-align: start !important;
-} 
+                
+                <div class="mt-auto w-100 row d-flex flex-column align-items-center">
+                    <a href="#about_me" class="text-decoration-none">
+                        <div class="col-md-12 text-center">
+                            
+                            <svg width="4em" height="4em" viewBox="0 0 16 16" class="bi bi-arrow-bar-down" fill="#ffffff88" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+                            </svg> 
+                            <p class="text-white-50">scroll down for more</p>                           
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
 
-nav, footer span {
-    background-image: radial-gradient(grey, black);
-    background-size: auto 100vmax;
-    background-repeat: repeat;
-    background-position: center;
-    background-attachment: fixed;
-} 
+            <!---------------------------------------about me------------------------------------------->
+            <div id="about_me" class="container d-flex align-items-center flex-column min-vh-100">
+                <div class="row w-100 mt-auto"> 
+                    <div class="col-md-12">
+                        <div class="jumbotron pb-2 m-0">
+                            <h1 class="display-1 text-white text-center">A little bit about me,</h1>
+                            <h2 class="display-3 text-white text-center">in case you wanted to know.</h2>
+                        
+                            <div class="call mx-auto m-5 text-white px-md-5 font-weight-normal">
+                                <p>Hey, my name is Natasha.</p>
+                                <p>I'm a recent grad of UW living in the Waterloo area.
+                                Always striving to improve myself, I recently enrolled in the U of T coding bootcamp. Using my tech savvy and design skills, I create elegant solutions to problems.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-.jumbotron, .list-group, .list-group *, .card *,  nav{
-    background-color: transparent;
-}
+                <div class="row mt-auto w-100 d-none d-md-block">
+                    <div class="col-md-12 text-center mb-4">
+                        <a href="#portfolio" class="text-decoration-none">
+                        <svg width="4em" height="4em" viewBox="0 0 16 16" class="bi bi-arrow-bar-down" fill="#ffffff88" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+                        </svg> 
+                        </a>
+                    </div>
+                </div>
 
-.card {
-    background-color: transparent;
-    background-size: contain;
-    border: none !important;
-    color: white !important;
-}
+            </div>
 
-input:focus, textarea:focus {
-    background-color: #33333388 !important;
-}
+            <!---------------------------------------portfolio------------------------------------------->
+            <div id="portfolio" class="container d-flex align-items-center flex-column min-vh-100">
+                <div class="row w-100 mt-auto"> 
+                    <div class="col-md-12">
+                        
+                        <div class="container d-flex align-items-center flex-column min-vh-100">
+                            <div class="row w-100 mt-auto"> 
+                                <div class="col-md-12">
+                                    <div class="jumbotron pb-2 m-0">
+                                        <h1 class="display-1 text-white text-center">Here's what I've done.</h1> 
+                                        <h2 class="display-3 text-white text-center">continue to scroll to see more</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-auto w-100 d-none d-md-block">
+                                <div class="col-md-12 text-center mb-4">
+                                    <a href="#refactor" class="text-decoration-none">
+                                    <svg width="4em" height="4em" viewBox="0 0 16 16" class="bi bi-arrow-bar-down" fill="#ffffff88" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+                                    </svg> 
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
 
-input {
-    border: none !important;
-    border-bottom: 4px solid white !important;
-    border-radius: 0 !important;
-}
+                        <!---------------------------------------project: code refactor------------------------------------------->
+                        <div id="refactor" class="container d-flex align-items-center flex-column">
+                            <div class="row w-100 mt-auto"> 
+                                <div class="col-md-12">
+                                    <div class="jumbotron pb-2 m-0">
+                                        <h2 class="display-3 text-white text-center">code refactor.</h2>
+                                        <div class="call mx-auto m-5 text-white px-md-5 font-weight-normal">
+                                            <p>Using my knowledge of HTML5, <a class="sm-text-decoration-none" href="https://tasha876.github.io/Horiseon-Marketing-Webpage/" target="_blank">I modified a sample website</a>&mdash; making it more more accessible for humans and search engines alike.</p>
+                                                <div class="text-center">
+                                                    <a class="p-2 badge-light" href="https://tasha876.github.io/Horiseon-Marketing-Webpage/" target="_blank">Check it out here</a>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-input:focus, textarea:focus {
-    background-color: #33333388 !important;
-    outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(248,249,250,.5) !important;
-}
+                            <div class="mx-auto w-100 mb-4 row d-none d-md-block">
+                                <div class="col-md-12 text-center">
+                                    <a href="#website" class="text-decoration-none">
+                                    <svg width="4em" height="4em" viewBox="0 0 16 16" class="bi bi-arrow-bar-down" fill="#ffffff88" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+                                    </svg> 
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
 
-textarea {
-    border: 4px solid white !important;
-    border-radius: 0 !important;
-}
+                        <!---------------------------------------project: website------------------------------------------->
+                        <div id="website" class="container d-flex align-items-center flex-column">
+                            <div class="row w-100 mt-auto"> 
+                                <div class="col-md-12">
+                                    <div class="jumbotron pb-2 m-0">
+                                        <h2 class="display-3 text-white text-center">this website.</h2>
+                                        <div class="call mx-auto m-5 text-white px-md-5 font-weight-normal">
+                                            <p>Using HTML, CSS, and the bootstrap framework, I created <a class="sm-text-decoration-none" href="#home" target="_blank">this portfolio website</a> for myself.</p>
+                                                <div class="text-center">
+                                                    <a class="p-2 badge-light" href="#home" target="_blank">Check it out here</a>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    
 
-p {
-    line-height: 1.5;
-}
+                            <div class="mx-auto w-100 mb-4 row d-none d-md-block">
+                                <div class="col-md-12 text-center">
+                                    <a href="#pass_gen" class="text-decoration-none">
+                                    <svg width="4em" height="4em" viewBox="0 0 16 16" class="bi bi-arrow-bar-down" fill="#ffffff88" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+                                    </svg> 
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
 
+                        <!---------------------------------------project: password generator------------------------------------------->
+                        <div id="pass_gen" class="container d-flex align-items-center flex-column">
+                            <div class="row w-100"> 
+                                <div class="col-md-12">
+                                    <div class="jumbotron pb-2 m-0">
+                                        <h2 class="display-3 text-white text-center">password generator.</h2>
+                                        <div class="call mx-auto m-5 text-white px-md-5 font-weight-normal">
+                                            <p>I created a simple <a href="yet_to_come.html" target="_blank">password generator.</a> It generates strong passwords using Javascript.</p>
+                                            <div class="text-center">
+                                                <a class="p-2 badge-light" href="yet_to_come.html" target="_blank">Check it out here</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-.row a:hover p {
-    color: white !important;
-}
+                            <div class="mt-auto mx-auto w-100 row d-none d-md-block">
+                                <div class="col-md-12 text-center">
+                                    <a href="#contact" class="text-decoration-none">
+                                    <svg width="4em" height="4em" viewBox="0 0 16 16" class="bi bi-arrow-bar-down" fill="#ffffff88" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+                                    </svg> 
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
 
-p a {
-    color: white;
-    padding: 0.5;
-    margin: 0;
-    border: none;
-    text-decoration: none;
-}
+                    </div>
+                </div>
+            </div>
+            
+            <!---------------------------------------contact------------------------------------------->
+            <div id="contact" class="container d-flex align-items-center flex-column">
+                <div class="d-flex align-items-center flex-column min-vh-100">
+                    <div class="row w-100 mt-auto"> 
+                        <div class="col-md-12">
+                            <div class="jumbotron pb-2 m-0">
+                                <h1 class="display-1 text-white text-center">Like what you see?</h1>
+                                <h2 class="display-3 text-white text-center">Contact me.</h2>
+                            </div>
 
-p a:hover {
-    color: white;
-    border-bottom: 4px solid white;
-    padding: 0;
-    margin: 0 0.5rem;
-    text-decoration: none;
-}
+                            <!---------------------------------------actual contact form------------------------------------------->
+                            <div class="container card px-2 m-0">
+                                <form class="form-group m-0 p-0" action="https://formspree.io/f/mleojwyw" method="post">
+                                    <div class="row"> 
+                                        
+                                            <div class="col-md-6">    
+                                                                                            
+                                                <label class="m-0 mt-1 p-0">Name:</label><br>
+                                                <input class="m-0 p-0 form-control text-white" type="text" name="name">
+                                                <label class="m-0 mt-4 p-0">Email:</label><br>
+                                                <input class="m-0 p-0 form-control text-white" type="email" name="_replyto">
+                                                <br>
+                                            </div> 
+                                            <div class="col-md-6">                                      
+                                                <label class="m-0 p-0">Message:</label><br>
+                                                <textarea class="m-0 p-0 form-control text-white" name="message" rows="5"></textarea>
+                                            </div>
+                                            
+                                    </div>
+                                    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                                    
+                                    <div class="call mx-auto m-5 px-5">
+                                        <div class="text-center m-5">
+                                            <button class="p-2 badge-light bg-white" role="button" type="submit" value="Send">Let's get in touch</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        
+                    </div>            
+                </div>   
+                        
+                        <div class="mt-auto w-100 row d-flex flex-column align-items-center">
+                            <a href="#home" class="text-decoration-none">
+                                <div class="col-md-12 text-center">
+                                    
+                                    <svg width="4em" height="4em" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill="#ffffff88" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"/>
+                                    </svg> 
+                                    <p class="text-white-50">scroll to top</p>                           
+                                </div>
+                            </a>
+                        </div>
+            </div>
+        </main>
 
-.row svg {
-    position: relative;
-    animation-name: move_arrow;
-    animation-duration: 1s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-}
-
-@keyframes move_arrow {
-    from {top: -10px;}
-    to {top: 10px;}
-}
-
-.row a:hover svg {
-    fill: white;
-}
-
-.call{
-    font-size: 1.5rem;
-}
-
-.call a, .call button {
-    font-weight: 600;
-    border: none;
-    padding: 0.5rem;
-    line-height: 1;
-    text-align: center;
-    min-width: 65px !important;
-}
-
-.call button:focus, .call button:hover {
-    color: #212529;
-    background-color: #dae0e5 !important;
-    text-decoration: underline;
-}
-
-.call button:focus {
-    outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(248,249,250,.5);
-}
-
-footer {
-    background-color: transparent;
-}
-
-
+        <!---------------------------------------footer------------------------------------------->
+        <footer class="page-footer fixed-bottom w-100 m-0 p-0"><div class = "container-fluid"><span class="float-right text-white-50 p-1">&copy Copyright 2020</span></div></footer>
+    </body>
+</html>
