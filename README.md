@@ -22,7 +22,7 @@ A refactored webpage made for fictional SEO company Horiseon. Only semantic and 
 #### Online portfolio website 
 Right now, because I have very limited entries, I have included this website. I will remove this once I have more entries.
 
-### Password Generator
+#### Password Generator
 This password generator, still to be created at this time, creates strong passwords according to the types (i.e. uppercase, lowercase, numeric, special) of characters the user would like. The character types are entered by the user. Because this project has yet to be completed, there is a link to an *"Under construction"* site.
 
 <a name="visuals"></a>
