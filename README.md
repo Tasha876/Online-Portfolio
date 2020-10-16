@@ -14,7 +14,7 @@ A portfolio of my work so far.
 ## 1. Description
 This portfolio will eventually contain several projects completed during my time at the [University of Toronto School for Continuing Studies Coding Bootcamp](https://bootcamp.learn.utoronto.ca/). It also contains a brief **about me** section and a **contact me** form.
 
-##### Note:
+#### Note:
 Rather than having several pages that link to each other, I used [scrollspy](https://getbootstrap.com/docs/4.0/components/scrollspy/) (by Bootstrap) to have the links be scrolled to. This was a stylistic change that I think makes my portfolio more on trend.
 
 ### Summary of Entries
