@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="style.css">
         <title>Natasha Fray | Portfolio</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/moment"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         
@@ -15,7 +16,7 @@
     <body data-spy="scroll" data-target=".navbar" data-offset="40">
 
         <!---------------------------------------navigation------------------------------------------->
-        <nav class="navbar navbar-expand-lg fixed-top navbar-dark mb-3 full-screen-scroller">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light text-dark mb-3 full-screen-scroller">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -41,44 +42,29 @@
           </nav>
 
         <!---------------------------------------content------------------------------------------->
-        <main>
-
+        <main autofocus="">
+            <div class = "sun_moon"></div>
              <!---------------------------------------splash intro------------------------------------------->
             <section id="home" class="container d-flex align-items-center flex-column min-vh-100">
-                <div class="row w-100 mt-auto">
+                <div class="row w-100 my-auto">
                     <div class="col-md-12">   
-                        <div class="jumbotron pb-2 m-0">
-                            <h1 class="display-1 text-white text-center">Hello.</h1>
-                            <h2 class="display-3 text-white text-center">I'm Natasha,</h2>
-                            <h2 class="display-4 text-white text-center">I code and design websites.</h2>
+                        <div class="jumbotron m-0">
+                            <h1 class="display-1 text-dark text-center">Hello.</h1>
+                            <h2 class="display-3 text-dark text-center">I'm Natasha,</h2>
+                            <h2 class="display-4 text-dark text-center">I code and design websites.</h2>
                         </div>
                     </div>   
-                </div> 
-
-                
-                <div class="mt-auto w-100 row d-flex flex-column align-items-center">
-                    <a href="#about_me" class="text-decoration-none">
-                        <div class="col-md-12 text-center">
-                            
-                            <svg width="4em" height="4em" viewBox="0 0 16 16" class="bi bi-arrow-bar-down" fill="#ffffff88" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
-                            </svg> 
-                            <p class="text-white-50">scroll down for more</p>                           
-                        </div>
-                    </a>
                 </div>
                 
             </section>
 
             <!---------------------------------------about me------------------------------------------->
             <section id="about_me" class="container d-flex align-items-center flex-column min-vh-100">
-                <div class="row w-100 mt-auto"> 
+                <div class="row w-100 my-auto"> 
                     <div class="col-md-12">
-                        <div class="jumbotron pb-2 m-0">
-                            <h1 class="display-1 text-white text-center">A little bit about me,</h1>
-                            <h2 class="display-3 text-white text-center">in case you wanted to know.</h2>
-                        
-                            <div class="call mx-auto m-5 text-white px-md-5 font-weight-normal">
+                        <article class="jumbotron pb-2 m-0 mx-4">
+                            <h1 class="display-1 text-dark text-center">A little bit about me,</h1>                        
+                            <div class="call mx-auto m-5 text-dark px-md-5 font-weight-normal">
                                 <p>Hey, my name is Natasha.</p>
                                 <p>I'm a recent grad of UW living in the Waterloo area.
                                 Always striving to improve myself, I recently enrolled in the U of T coding bootcamp. Using my tech savvy and design skills, I create elegant solutions to problems.</p>
@@ -86,52 +72,31 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="row mt-auto w-100 d-none d-md-block">
-                    <div class="col-md-12 text-center mb-4">
-                        <a href="#portfolio" class="text-decoration-none">
-                        <svg width="4em" height="4em" viewBox="0 0 16 16" class="bi bi-arrow-bar-down" fill="#ffffff88" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
-                        </svg> 
-                        </a>
-                    </div>
-                </div>
-
             </section>
 
             <!---------------------------------------portfolio------------------------------------------->
             <section id="portfolio" class="container d-flex align-items-center flex-column min-vh-100">
-                <div class="row w-100 mt-auto"> 
+                <div class="row w-100 my-auto"> 
                     <div class="col-md-12">
                         
                         <div class="container d-flex align-items-center flex-column min-vh-100">
-                            <div class="row w-100 mt-auto"> 
+                            <div class="row w-100 my-auto"> 
                                 <div class="col-md-12">
                                     <div class="jumbotron pb-2 m-0">
-                                        <h1 class="display-1 text-white text-center">Here's what I've done.</h1> 
-                                        <h2 class="display-3 text-white text-center">continue to scroll to see more</h2>
+                                        <h1 class="display-1 text-dark text-center">Here's what I've done.</h1> 
                                     </div>
-                                </div>
-                            </div>
-                            <div class="row mt-auto w-100 d-none d-md-block">
-                                <div class="col-md-12 text-center mb-4">
-                                    <a href="#refactor" class="text-decoration-none">
-                                    <svg width="4em" height="4em" viewBox="0 0 16 16" class="bi bi-arrow-bar-down" fill="#ffffff88" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
-                                    </svg> 
-                                    </a>
                                 </div>
                             </div>
                         </div>
 
                         <!---------------------------------------project: code refactor------------------------------------------->
-                        <article id="refactor" class="container d-flex align-items-center flex-column min-vh-100">
+                        <article id="refactor" class="container d-flex align-items-center flex-column min-vh-100 mx-0">
                             <div class="row w-100 mt-auto"> 
                                 <div class="col-md-12">
                                     <div class="jumbotron pb-2 m-0">
-                                        <h2 class="display-3 text-white text-center">code refactor.</h2>
-                                        <img class="d-block rounded-circle mx-auto my-5 img-thumbnail img-fluid" style="height: 200px" src="horiseon_img.png" alt="refactored website">
-                                        <div class="call mx-auto mx-5 text-white px-md-5 font-weight-normal">
+                                        <h2 class="display-3 text-dark text-center">code refactor.</h2>
+                                        <img class="d-block mx-auto my-5 img-thumbnail img-fluid" style="height: 200px; width:300px" src="horiseon_img.png" alt="refactored website">
+                                        <div class="call mx-auto mx-5 text-dark px-md-5 font-weight-normal">
                                             <p>Using my knowledge of HTML5, <a class="sm-text-decoration-none" href="https://tasha876.github.io/Horiseon-Marketing-Webpage/" target="_blank">I modified a sample website</a>&mdash; making it more more accessible for humans and search engines alike.</p>
                                                 <div class="text-center">
                                                     <a class="p-2 badge-light" href="https://tasha876.github.io/Horiseon-Marketing-Webpage/" target="_blank">Check it out here</a>
@@ -140,26 +105,16 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="mx-auto w-100 mb-4 row d-none d-md-block">
-                                <div class="col-md-12 text-center">
-                                    <a href="#website" class="text-decoration-none">
-                                    <svg width="4em" height="4em" viewBox="0 0 16 16" class="bi bi-arrow-bar-down" fill="#ffffff88" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
-                                    </svg> 
-                                    </a>
-                                </div>
-                            </div>
                         </article>
 
                         <!---------------------------------------project: website------------------------------------------->
-                        <article id="website" class="container d-flex align-items-center flex-column min-vh-100">
+                        <article id="website" class="container d-flex align-items-center flex-column min-vh-100 mx-0">
                             <div class="row w-100 mt-auto"> 
                                 <div class="col-md-12">
                                     <div class="jumbotron pb-2 m-0">
-                                        <h2 class="display-3 text-white text-center">this website.</h2>
-                                        <img class="d-block rounded-circle mx-auto my-5 img-fluid img-thumbnail" style="height: 200px; width:200px; object-fit: cover;" src="this_site.png" alt="thumbnail of this site">
-                                        <div class="call mx-auto mx-5 text-white px-md-5 font-weight-normal">
+                                        <h2 class="display-3 text-dark text-center">this website.</h2>
+                                        <img class="d-block text-dark mx-auto my-5 img-fluid img-thumbnail" style="height: 200px; width:300px; object-fit: cover;" src="this_site.png" alt="thumbnail of this site">
+                                        <div class="call mx-auto mx-5 text-dark px-md-5 font-weight-normal">
                                             <p>Using HTML, CSS, and the bootstrap framework, I created <a class="sm-text-decoration-none" href="#home" target="_blank">this portfolio website</a> for myself.</p>
                                                 <div class="text-center">
                                                     <a class="p-2 badge-light" href="#home" target="_blank">Check it out here</a>
@@ -168,42 +123,21 @@
                                     </div>
                                 </div>
                             </div>
-                    
-
-                            <div class="mx-auto w-100 mb-4 row d-none d-md-block">
-                                <div class="col-md-12 text-center">
-                                    <a href="#pass_gen" class="text-decoration-none">
-                                    <svg width="4em" height="4em" viewBox="0 0 16 16" class="bi bi-arrow-bar-down" fill="#ffffff88" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
-                                    </svg> 
-                                    </a>
-                                </div>
-                            </div>
                         </article>
 
                         <!---------------------------------------project: password generator------------------------------------------->
-                        <article id="pass_gen" class="container d-flex align-items-center flex-column min-vh-100">
+                        <article id="pass_gen" class="container d-flex align-items-center flex-column min-vh-100 mx-0">
                             <div class="row w-100 mt-auto"> 
                                 <div class="col-md-12">
                                     <div class="jumbotron pb-2 m-0">
-                                        <h2 class="display-3 text-white text-center">password generator.</h2>
-                                        <img class="d-block rounded-circle mx-auto my-5 img-fluid img-thumbnail" style="height: 200px; width:200px; object-fit: cover;" src="computer.jpg" alt="computer">
-                                        <div class="call mx-auto mx-5 text-white px-md-5 font-weight-normal">                                            <p>I created a simple <a href="yet_to_come.html" target="_blank">password generator.</a> It generates strong passwords using Javascript.</p>
+                                        <h2 class="display-3 text-dark text-center">password generator.</h2>
+                                        <img class="d-block text-dark mx-auto my-5 img-fluid img-thumbnail" style="height: 200px; width:300px; object-fit: cover;" src="computer.jpg" alt="computer">
+                                        <div class="call mx-auto mx-5 text-dark px-md-5 font-weight-normal">                                            <p>I created a simple <a href="yet_to_come.html" target="_blank">password generator.</a> It generates strong passwords using Javascript.</p>
                                             <div class="text-center">
                                                 <a class="p-2 badge-light" href="yet_to_come.html" target="_blank">Check it out here</a>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-
-                            <div class="mx-auto w-100 mb-4 row d-none d-md-block">
-                                <div class="col-md-12 text-center">
-                                    <a href="#contact" class="text-decoration-none">
-                                    <svg width="4em" height="4em" viewBox="0 0 16 16" class="bi bi-arrow-bar-down" fill="#ffffff88" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
-                                    </svg> 
-                                    </a>
                                 </div>
                             </div>
                         </article>
@@ -218,8 +152,8 @@
                     <div class="row w-100 mt-auto"> 
                         <div class="col-md-12">
                             <div class="jumbotron pb-2 m-0">
-                                <h1 class="display-1 text-white text-center">Like what you see?</h1>
-                                <h2 class="display-3 text-white text-center">Contact me.</h2>
+                                <h1 class="display-1 text-dark text-center">Like what you see?</h1>
+                                <h2 class="display-3 text-dark text-center">Contact me.</h2>
                             </div>
 
                             <!---------------------------------------actual contact form------------------------------------------->
@@ -230,14 +164,14 @@
                                             <div class="col-md-6">    
                                                                                             
                                                 <label class="m-0 mt-1 p-0">Name:</label><br>
-                                                <input class="m-0 p-0 form-control text-white" type="text" name="name">
+                                                <input class="m-0 p-0 form-control text-dark" type="text" name="name">
                                                 <label class="m-0 mt-4 p-0">Email:</label><br>
-                                                <input class="m-0 p-0 form-control text-white" type="email" name="_replyto">
+                                                <input class="m-0 p-0 form-control text-dark" type="email" name="_replyto">
                                                 <br>
                                             </div> 
                                             <div class="col-md-6">                                      
                                                 <label class="m-0 p-0">Message:</label><br>
-                                                <textarea class="m-0 p-0 form-control text-white" name="message" rows="5"></textarea>
+                                                <textarea class="m-0 p-0 form-control text-dark" name="message" rows="5"></textarea>
                                             </div>
                                             
                                     </div>
@@ -254,22 +188,10 @@
                         
                     </div>            
                 </div>   
-                        
-                        <div class="mt-auto w-100 row d-flex flex-column align-items-center">
-                            <a href="#home" class="text-decoration-none">
-                                <div class="col-md-12 text-center">
-                                    
-                                    <svg width="4em" height="4em" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill="#ffffff88" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"/>
-                                    </svg> 
-                                    <p class="text-white-50">scroll to top</p>                           
-                                </div>
-                            </a>
-                        </div>
             </section>
         </main>
-
         <!---------------------------------------footer------------------------------------------->
-        <footer class="page-footer fixed-bottom w-100 m-0 p-0"><div class = "container-fluid"><span class="float-right text-white-50 p-1">&copy; Copyright 2020</span></div></footer>
+        <footer class="page-footer fixed-bottom w-100 m-0 p-0"><div class = "container-fluid"><span class="float-right text-dark-50 p-1">&copy; Copyright 2020</span></div></footer>
     </body>
+    <script src="script.js"></script>
 </html>
