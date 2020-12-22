@@ -13,6 +13,7 @@ html {
     max-width: 100vw;
     overflow-x: hidden;
     min-width: 434px;
+    scroll-behavior: smooth;
 }
 
 section {
@@ -81,10 +82,6 @@ main > img {
     mix-blend-mode: add;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 i {
     width: 100vw;
     height: auto;
@@ -131,13 +128,11 @@ button.navbar-toggler {
 
 .card {
     background-size: contain;
-    /* border: none !important; */
-    background-color: #eee;
     color: #222 !important;
 }
 
 input, textarea {
-    border: 2px solid grey;
+    border: 1px solid #007bff33 !important;
     border-radius: 0 !important;
 }
 
@@ -150,24 +145,32 @@ p {
     line-height: 1.5;
 }
 
+.project-list a {
+    font-size: 1.5rem !important;
+}
+
+.project-list > h3::after {
+    content: "  \2666  ";
+    color: #eee;
+}
+
+.project-list > h3:last-child:after {
+    content: "";
+}
+
 
 .row a:hover p {
     color: white !important;
 }
 
 p a {
-    color: #222;
-    padding: 0.5;
     margin: 0;
     border: none;
-    text-decoration: none;
+
 }
 
 p a:hover {
     border-bottom: 4px solid white;
-    padding: 0;
-    margin: 0 0.5rem;
-    text-decoration: none;
 }
 
 .row svg {
@@ -191,42 +194,33 @@ p a:hover {
     font-size: 1.5rem;
 }
 
-.call a, .call button {
+.call button {
     font-weight: 600;
     border: none;
     padding: 0.5rem;
     line-height: 1;
     text-align: center;
     min-width: 65px !important;
+    color: #007bff;
 }
 
 .call button:focus, .call button:hover {
-    color: white;
-    background-color: #222 !important;
     text-decoration: underline;
+    color: #0056b3;
+
 }
 
 .call button:focus {
     outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(248,249,250,.5);
 }
 
 footer {
     background-color: transparent;
 }
 
-@media (min-width: 0px) and (max-width: 575px) {
-      /* .frame img {
-        margin: 0 5%;
-        padding: 10px;
-        height: 95%;
-        width: 80%
-    }
+/* added the below media queries so that the image inside of the laptop screen would center right*/
 
-    .frame{
-      max-width: 300px;
-      max-height: 165px;
-    } */
+@media (min-width: 0px) and (max-width: 575px) {
 
     .frame img {
       margin: 0 5%;
@@ -240,15 +234,6 @@ footer {
       max-height: 165px !important;
     }
 }
-/* 
-@media (min-width: 482px) {
-      .frame img {
-        margin: 11% 5.5%;
-        padding: 2%;
-        height: 70%;
-        width: 82%
-    }
-} */
 
 @media (min-width: 576px) {
     .frame img {

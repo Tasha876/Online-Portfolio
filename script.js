@@ -16,12 +16,6 @@ circle.setAttribute("r","50vw");
 svg.appendChild(circle);
 sunDiv.appendChild(svg);
 
-
-
-
-// sun.innerHTML = '<svg height="100vw" width="100vw"><circle cx="50vw" cy="50vw" r="50vw" stroke="none"></svg>';
-
-
 const homeScreen = document.querySelector("#home");
 
 
@@ -33,27 +27,13 @@ fetch(url)
         return response.json()
     })
     .then(function(data) {
-        
-        // console.log(data);
         sunrise = moment.utc(data.results.sunrise).valueOf();
         sunset = moment.utc(data.results.sunset).valueOf();
-        // console.log(sunrise);
-        // console.log(moment.now());
-        // console.log(sunset);
-        // console.log(moment().());
        (sunrise < moment.now() && moment.now() < sunset)? circle.style.fill = "gold" : circle.style.fill = "lightSteelBlue";
-       console.log(circle.style.fill)
        return data;
     })
 
-addEventListener("load", function(){
-    // sun.classList.add("sun_moonrise");
-
-    // main.focus();
-    // location.hash="";
-    // location.href.split('#')[0];
+addEventListener("load" || "focus", function(){
     main.prepend(sunDiv);
-    // location.hash("nav")
-    // undoScrolling: true,
 })
 
