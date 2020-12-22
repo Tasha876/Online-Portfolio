@@ -173,13 +173,13 @@ p a:hover {
     border-bottom: 4px solid white;
 }
 
-.row svg {
+/* .row svg {
     position: relative;
     animation-name: move_arrow;
     animation-duration: 1s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
-}
+} */
 
 @keyframes move_arrow {
     from {top: -10px;}

@@ -1,6 +1,8 @@
 // Docs: https://momentjs.com/
 moment().format();
 
+let loaded = false;
+
 const main = document.querySelector("main");
 // const sun = document.querySelector(".sun_moon svg")
 const sunDiv = document.createElement("div");
@@ -33,7 +35,17 @@ fetch(url)
        return data;
     })
 
-addEventListener("load" || "focus", function(){
+
+const makeSunrise = () => {
     main.prepend(sunDiv);
-})
+    loaded = true;
+}
+
+addEventListener("focus", makeSunrise);
+
+addEventListener("load", makeSunrise);
+
+addEventListener("blur", function(){
+    if (loaded) removeEventListener("focus", makeSunrise)
+    })
 
