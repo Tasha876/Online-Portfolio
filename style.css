@@ -107,14 +107,16 @@ main .container-fluid {
 } 
 
 nav, footer span {
-    background-size: auto 100vmax;
-    background-repeat: repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-color: white;
+    /* this simulated a border around the nav text */
+    text-shadow:
+        -1px -1px 0 white,  
+        1px -1px 0 white,
+        -1px  1px 0 white,
+        1px  1px 0 white;
+        background-color: transparent;
 } 
 
-nav, nav * {
+nav * {
     background-color: transparent;
 }
 

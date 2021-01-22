@@ -1,10 +1,10 @@
 // Docs: https://momentjs.com/
 moment().format();
 
+// setting loaded variable to false, so that I can update it later, so sun only rises one time
 let loaded = false;
 
 const main = document.querySelector("main");
-// const sun = document.querySelector(".sun_moon svg")
 const sunDiv = document.createElement("div");
 sunDiv.classList.add("sun_moon", "sun_moonrise");
 const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
@@ -45,7 +45,7 @@ addEventListener("focus", makeSunrise);
 
 addEventListener("load", makeSunrise);
 
-addEventListener("blur", function(){
+addEventListener("blur", function() {
     if (loaded) removeEventListener("focus", makeSunrise)
-    })
+})
 
