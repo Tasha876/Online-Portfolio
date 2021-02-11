@@ -9,51 +9,101 @@
     to {top: 100vh;}
 }
 
+
 html {
     font-size: calc(45% + 1vw) !important;
     scroll-behavior: smooth;
-}
-
-main {
-    overflow-x: hidden;
 }
 
 section {
     position: relative;
 }
 
-main > img {
+/* main > img {
     position: absolute;
     left: auto;
     width: 50vw;
     height: auto;
     overflow-x: hidden;
-}
+} */
 
-.frame{
+.frame {
     position: relative;
-    background-image: url("images/macbook.png");
+    box-sizing: border-box;
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center;
-    width: 600px;
-    height: 330px;
-    margin: auto;
+    background-position: top;
+    width: 80%;
+    height: auto !important;
+    margin-bottom: 0 auto;
+    padding-bottom: 2vmin !important;
+    border: 3px solid lightgrey;
+    padding: 3%;
+    border-bottom: none;
+    border-radius: 1rem 1rem 0 0;
+    background-color: black;
+    box-shadow: 0 0 30px grey;
+}
+
+.frame:after {
+  display: block;
+  position: relative;
+  top: calc(0.7vmax + 2vmin) !important;
+  z-index: 100 !important;
+  content: "";
+  width: 25%;
+  height: 0.7vmax;
+  background-image: linear-gradient(90deg,#585858 0%, #707070 5%, #c0c0c0 10%, #c0c0c0 90%, #707070 95%, #585858 100%);
+  transform: perspective(10px) rotateX(-1deg);
+  border-radius: 0 0 0.5rem 0.5rem;
+  margin: 0 auto;
 }
 
 .frame img {
-    position: absolute;
-    object-fit: cover;
+    width: 100% !important;
+    margin: auto;
+    height: auto !important;
+    position: relative;
+}
+
+.cover {
+    display: block;
+    position: relative;
+    height: 2vmin;
+    width: 100%;
+    background-color: lightGrey;
+    border-radius: 2px;
+    background-image: linear-gradient(90deg,grey 0, white 2%, lightGrey 5%, grey 10%, lightGrey 50%, grey 90%, lightGrey 95%, white 98%, grey 100%);
+    margin-bottom: 50px;
+}
+
+.cover:after {
+  content: "";
+  display: block;
+  position: relative;
+  top: 2vmin;
+  left: 1%;
+  /* width: 100% !important;
+  border-top: 20px solid #c0c0c0;
+  border-left: 25px solid rgba(0, 0, 0, 0);
+  border-right: 25px solid rgba(0, 0, 0, 0);*/
+  box-shadow: 0 10px 30px;
+  width:98%;
+  height: 20px;
+  background-image: linear-gradient(0deg,#585858 0%, #707070 25%, #c0c0c0 100%);
+  transform: perspective(10px) rotateX(-1deg);
+  border-radius: 0 0 0.5rem 0.5rem;
 }
 
 .sun_moon svg{
-    position: absolute;
+    position: fixed;
     left: calc(50% - 50vw);
     fill: transparent;
     stroke: "none";
     animation: rise 2s ease 0s 1 reverse forwards;
     height: 100vw;
     width: 100vw;
+    margin-top: 15px;
 }
 
 .sun_moon > svg > circle {
@@ -65,7 +115,7 @@ main > img {
     top: -10vh;
     margin: auto 0;
     background-image: linear-gradient(lightBlue 0%, lightblue 30%, skyBlue 30%, skyBlue 75%, #42a7d6 75%, #42a7d6 100%);
-    width: 100vw;
+    width: 100%;
     height: calc(100% + 10vh);
     mix-blend-mode: hard-light;
 }
@@ -75,7 +125,7 @@ main > img {
     margin: auto 0;
     top: 0;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-image: linear-gradient(skyBlue 0%, skyBlue 85%, lightBlue 85%, lightBlue 100%);
     mix-blend-mode: hard-light;
 }
@@ -84,10 +134,10 @@ main > img {
     mix-blend-mode: add;
 }
 
-i {
+/* i {
     width: 100vw;
     height: auto;
-}
+} */
 
 body {
     background-size: auto 100vmax;
@@ -98,18 +148,19 @@ body {
 }
 
 main {
-    overflow-y: auto;
+    /* overflow-y: auto; */
+    /* max-width: 100vw; */
+    overflow-x: hidden;
     scroll-snap-type: mandatory !important;
     scroll-snap-points-y: repeat(100vh) !important;
 }
 
 main .container-fluid {
-    width: 100vw;
     scroll-snap-align: start !important;
 } 
 
 nav, footer span {
-    /* this simulated a border around the nav text */
+    /* this simulates a border around the nav text */
     text-shadow:
         -1px -1px 0 white,  
         1px -1px 0 white,
@@ -155,16 +206,18 @@ p {
 
 .project-list > h3:first-child::before {
     content: "  \2666  ";
-    color: #eee !important;
+    color: #007bff !important;
+    opacity: 0.3;
 }
 
 .project-list > h3::after {
     content: "  \2666  ";
-    color: #eee !important;
+    color: #007bff !important;
+    opacity: 0.3;
 }
 
 .project-list > h3:last-child:after {
-    content: "";
+    content: "  \2666  ";
 }
 
 
@@ -232,17 +285,17 @@ footer {
 /* extra-small */
 @media (min-width: 0px) and (max-width: 575px) {
 
-    .frame img {
+    /* .frame img {
       margin: 0 5%;
       padding: 10px;
       height: 95%;
       width: 80%
-    }
+    } */
 
-    .frame{
+    /* .frame{
       max-width: 300px !important;
       max-height: 165px !important;
-    }
+    }*/
 
     article {
         min-height: 50vh !important;
@@ -251,12 +304,12 @@ footer {
 
 /* small */
 @media (min-width: 576px) {
-    .frame img {
+    /* .frame img {
         margin: 14.5% 5%;
         padding: 10px;
         height: 63%;
         width: 82%
-    }
+    } */
 
     section, article {
         min-height: 100vh !important;
@@ -265,7 +318,7 @@ footer {
 }
 
 /* medium */
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
 
     .frame img {
         margin: 29% 3.5%;
@@ -273,25 +326,25 @@ footer {
         height: 48%;
         width: 83%
     }
-}
+} */
 
 /* large */
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
     .frame img {
         margin: 12% 6%;
         padding: 10px;
         height: 65%;
         width: 81%
     }
-}
+} */
 
 /* extra-large */
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
     .frame img {
         margin: 5% 7%;
         padding: 10px;
         height: 78%;
         width: 80%
-    }
+    } */
 }
 

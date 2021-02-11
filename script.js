@@ -31,7 +31,7 @@ fetch(url)
     .then(function(data) {
         sunrise = moment.utc(data.results.sunrise).valueOf();
         sunset = moment.utc(data.results.sunset).valueOf();
-       (sunrise < moment.now() && moment.now() < sunset)? circle.style.fill = "gold" : circle.style.fill = "lightSteelBlue";
+       (sunrise < moment.now() && moment.now() < sunset)? circle.style.fill = "gold" : circle.style.fill = "lightCyan";
        return data;
     })
 
