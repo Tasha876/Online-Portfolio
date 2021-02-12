@@ -22,16 +22,19 @@ Rather than having several pages that link to each other, I used [scrollspy](htt
 #### NOVELty (Horiseon Marketing)
 Working as a team, we created NOVELty. It allows you to add books that you have read or have finished reading, then recommends books to you based on your input.
 
-#### Online portfolio website 
-Right now, because I have very limited entries, I have included this website. I will remove this once I have more entries.
+#### Eat da Burger 
+I created a burger logger called Eat da Burger. It allows you to add, eat, and delete (virtual!) burgers! It also saves your current burgers and loads them for the next time.
+
+#### Servicely
+Working with a team, we created Servicely — an app that helps you either find help when your in need or help if you're feeling generous.
 
 #### Password Generator
-This password generator, still to be created at this time, creates strong passwords according to the types (i.e. uppercase, lowercase, numeric, special) of characters the user would like. The character types are entered by the user. Because this project has yet to be completed, there is a link to an *"Under construction"* site.
+I created a simple password generator. It generates strong passwords using Javascript.
 
 <a name="visuals"></a>
 ## 2. Visuals
 Screenshot of the webpage:
-![Screenshot of webpage](portfolio_screenshot.png)
+![Screenshot of webpage](images/screenshot.png)
 
 <a name="deployed"></a>
 ## 3. Deployed Webpage
@@ -44,8 +47,7 @@ Should you find an issue with this webpage, please create a [new issue](https://
 <a name="next_steps"></a>
 ## 5. Next steps
 This portfolio is an ongoing project. Some next steps include:
-* adding the password generator,
-* adding larger thumbnails and finding a way to make larger thumbnails work with the design,
+* decreasing the size of the images to make loading faster.
 * adding more interativity such as a [full screen scroller](https://mdbootstrap.com/previews/docs/latest/html/fsscroller/extended.html#view-2),
 * adding many more projects.
 
