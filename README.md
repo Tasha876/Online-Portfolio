@@ -12,15 +12,15 @@ A portfolio of my work so far.
 
 <a name="desc"></a>
 ## 1. Description
-This portfolio will eventually contain several projects completed during my time at the [University of Toronto School for Continuing Studies Coding Bootcamp](https://bootcamp.learn.utoronto.ca/). It also contains a brief **about me** section and a **contact me** form.
+This portfolio contains several projects completed during my time at the [University of Toronto School for Continuing Studies Coding Bootcamp](https://bootcamp.learn.utoronto.ca/). It also contains a brief **about me** section, a **contact me** form and a link to my **resume**.
 
 #### Note:
 Rather than having several pages that link to each other, I used [scrollspy](https://getbootstrap.com/docs/4.0/components/scrollspy/) (by Bootstrap) to have the links be scrolled to. This was a stylistic change that I think makes my portfolio more on trend.
 
 ### Summary of Entries
 
-#### Refactored Website (Horiseon Marketing)
-A refactored webpage made for fictional SEO company Horiseon. Only semantic and very limited functional changes were made.
+#### NOVELty (Horiseon Marketing)
+Working as a team, we created NOVELty. It allows you to add books that you have read or have finished reading, then recommends books to you based on your input.
 
 #### Online portfolio website 
 Right now, because I have very limited entries, I have included this website. I will remove this once I have more entries.
