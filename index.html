@@ -16,7 +16,7 @@
     <body data-spy="scroll" data-target=".navbar" data-offset="40">
 
         <!---------------------------------------navigation------------------------------------------->
-        <nav class="navbar navbar-expand-lg nav-transparent fixed-top navbar-light text-dark m-0 full-screen-scroller">
+        <nav class="navbar navbar-expand-sm nav-transparent fixed-top navbar-light text-dark m-0 full-screen-scroller">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -29,7 +29,7 @@
                         <a class="nav-link" href="#about_me">About Me</a>
                     </li>
                         <div class="sub-nav">
-                          <li class="nav-item sub-nav">
+                          <li class="nav-item">
                           <a class="nav-link" href="#portfolio">Projects <i class="fa fa-caret-down"></i></a>
                             <ul class="nav navbar-nav sub-nav-content">
                                 <li class="nav-item">
@@ -80,7 +80,7 @@
                 <div class="water"></div>
                 <div class="row w-100 my-auto"> 
                     <div class="col-md-12">
-                        <article class="jumbotron m-xl-4 p-xl-4 pb-2 m-0">
+                        <article class="jumbotron m-xl-4 p-xl-4 pb-2 m-0 p-0">
                             <h1 class="display-3 text-dark text-center">A little bit about me.</h1>                        
                             <div class="call mx-auto m-5 text-dark px-md-5 font-weight-normal text-xl-center">
                                 <p>Hey, my name is Natasha.</p>
@@ -93,11 +93,11 @@
             </section>
 
             <!---------------------------------------portfolio------------------------------------------->
-            <section id="portfolio" class="container-fluid d-flex align-items-center flex-column min-vh-100">
+            <section id="portfolio" class="container-fluid d-flex align-items-center flex-column px-0">
                 <div class="deep"></div>
                 <div class="row w-100 my-auto"> 
                     <div class="col-md-12">
-                        <div class="container-fluid d-flex align-items-center flex-column min-vh-100">
+                        <article id="toc" class="container-fluid d-flex align-items-center flex-column">
                             <div class="row w-100 my-auto"> 
                                 <div class="col-md-12">
                                     <div class="jumbotron pb-2 m-0">
@@ -112,10 +112,10 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </article>
 
                         <!---------------------------------------project: Novelty------------------------------------------->
-                        <article id="novelty" class="container-fluid d-flex align-items-center flex-column min-vh-100 mx-0">
+                        <article id="novelty" class="container-fluid d-flex align-items-center flex-column mx-0 px-0">
                             <div class="row w-100 my-auto"> 
                                 <div class="col-md-12">
                                     <div class="jumbotron py-3 m-0">
@@ -140,7 +140,7 @@
                         </article>
 
                         <!---------------------------------------project: Eat da Burger------------------------------------------->
-                        <article id="eat-da-burger" class="container-fluid d-flex align-items-center flex-column min-vh-100 mx-0">
+                        <article id="eat-da-burger" class="container-fluid d-flex align-items-center flex-column mx-0 px-0">
                             <div class="row w-100 my-auto"> 
                                 <div class="col-md-12">
                                     <div class="jumbotron py-3 m-0">
@@ -165,7 +165,7 @@
 
                         <!---------------------------------------project: servicely------------------------------------------->
                         <div id="projects">
-                            <article id="servicely" class="container-fluid d-flex align-items-center flex-column min-vh-100 mx-0">
+                            <article id="servicely" class="container-fluid d-flex align-items-center flex-column mx-0 px-0">
                                 <div class="row w-100 my-auto"> 
                                     <div class="col-md-12">
                                         <div class="jumbotron py-3 m-0">
@@ -190,7 +190,7 @@
                             </article>
 
                         <!---------------------------------------project: password generator------------------------------------------->
-                        <article id="pass-gen" class="container-fluid d-flex align-items-center flex-column min-vh-100 mx-0">
+                        <article id="pass-gen" class="container-fluid d-flex align-items-center flex-column mx-0 px-0">
                             <div class="row w-100 my-auto"> 
                                 <div class="col-md-12">
                                     <div class="jumbotron py-3 m-0">
@@ -215,7 +215,7 @@
                         </article>
 
                         <!---------------------------------------project: Employee Summary------------------------------------------->
-                        <article id="employee-summary" class="container-fluid d-flex align-items-center flex-column min-vh-100 mx-0">
+                        <article id="employee-summary" class="container-fluid d-flex align-items-center flex-column mx-0 px-0">
                             <div class="row w-100 my-auto"> 
                                 <div class="col-md-12">
                                     <div class="jumbotron py-3 m-0">
@@ -290,8 +290,8 @@
                                     </div>
                                     <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
                                     
-                                    <div class="call mx-auto mx-5 px-5">
-                                        <div class="text-center mx-5">
+                                    <div class="call mx-auto pb-4">
+                                        <div class="text-center">
                                             <button class="p-2  bg-white" type="submit" value="Send">Let's get in touch</button>
                                         </div>
                                     </div>
