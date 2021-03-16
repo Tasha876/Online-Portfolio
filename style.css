@@ -9,8 +9,18 @@
     to {top: 100vh;}
 }
 
+@keyframes show {
+    from {max-height: 0;}
+    to {max-height: 100%;}
+}
+
 html {
     font-size: calc(45% + 1vw) !important;
+    scroll-behavior: smooth;
+}
+
+article .display-3 {
+    font-size: calc(100% + 6vw) !important;
     scroll-behavior: smooth;
 }
 
@@ -82,6 +92,10 @@ section {
   border-radius: 0 0 0.5rem 0.5rem;
 }
 
+.sun_moon {
+  z-index: -100;
+}
+
 .sun_moon svg{
     position: fixed;
     left: calc(50% - 50vw);
@@ -102,7 +116,7 @@ section {
     margin: auto 0;
     background-image: linear-gradient(lightBlue 0%, lightblue 30%, skyBlue 30%, skyBlue 75%, #42a7d6 75%, #42a7d6 100%);
     width: 100%;
-    height: calc(100% + 10vh);
+    min-height: calc(100% + 10vh);
     mix-blend-mode: hard-light;
 }
 
@@ -114,7 +128,7 @@ section {
     position: absolute;
     margin: auto 0;
     top: 0;
-    height: 100vh;
+    max-height: 100vh;
     width: 100%;
     background-image: linear-gradient(skyBlue 0%, skyBlue 85%, lightBlue 85%, lightBlue 100%);
     mix-blend-mode: hard-light;
@@ -165,13 +179,16 @@ nav * {
 }
 
 .sub-nav-content {
-  display: none;
+  display: flex;
   position: absolute;
   right: 1rem;
   width: auto;
+  max-height: 0;
+  overflow: hidden;
   z-index: 1;
   background-color: #ffffffdd;
   box-shadow: 0 0 15px white;
+  border-radius: 5px 0 5px 5px;
   justify-content: flex-end;
   flex: row;
 }
@@ -188,13 +205,12 @@ nav * {
 }
 
 ul.sub-nav > li {
-  /* position:  !important; */
   left: 10px !important;
   display: inline;
 }
 
 .sub-nav:hover .sub-nav-content {
-  display: flex;
+  animation: show 0.5s ease-in-out 0.5s 1 normal forwards;
 }
 
 button.navbar-toggler {
@@ -304,18 +320,48 @@ footer {
 @media (min-width: 0px) and (max-width: 575px) {
 
     @keyframes rise-mobile {
-    from {top: calc(50vh - 50vw);}
-    to {top: 100vh;}
+        from {top: calc(50vh - 50vw);}
+        to {top: 100vh;}
     }
 
-    .sun_moon svg{
-    animation: rise-mobile 2s ease 0s 1 reverse forwards;
+    /* makes sun_moon only go to center on mobile */
+    .sun_moon svg {
+        animation: rise-mobile 2s ease 0s 1 reverse forwards;
     }
 
-    #navbarNav > ul > li {
-    background: none;
-    box-shadow: none;
-    height: auto;
+    nav {
+        right: auto !important; /* to fix bootstrap, makes nav only as wide as it needs to be */
+        flex: none;
+    }
+
+    #navbarNav > ul > li, .sub-nav, .sub-nav-content {
+        background: none !important;
+        box-shadow: none !important;
+        border-radius: 0;
+        height: auto;
+    }
+
+    #navbarNav {
+      background-color: white;
+    }
+
+    .sub-nav {
+      float: left !important;
+    }
+
+    .sub-nav-content {
+      position: relative !important;
+      left: 10px;
+      
+    }
+
+    /* reduces the height of the sections for smaller screens */
+    section, article {
+        min-height: 75vh !important;
+    }
+
+    #toc {
+      min-height: 50vh !important;
     }
 
 }
@@ -323,7 +369,8 @@ footer {
 /* small */
 @media (min-width: 576px) {
 
-    section, article {
+    /* sets min-height back to 100% */
+    section, article, #toc {
         min-height: 100vh !important;
     }
 
