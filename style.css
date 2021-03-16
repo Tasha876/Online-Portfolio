@@ -106,6 +106,10 @@ section {
     mix-blend-mode: hard-light;
 }
 
+#portfolio {
+    background: #ffffffcc;
+}
+
 #portfolio .deep {
     position: absolute;
     margin: auto 0;
