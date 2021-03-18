@@ -19,7 +19,7 @@ Rather than having several pages that link to each other, I used [scrollspy](htt
 
 ### Summary of Entries
 
-#### NOVELty (Horiseon Marketing)
+#### NOVELty
 Working as a team, we created NOVELty. It allows you to add books that you have read or have finished reading, then recommends books to you based on your input.
 
 #### Eat da Burger 
